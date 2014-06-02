@@ -1,0 +1,220 @@
+/*!
+ * Roots 6.5.2
+ */
+
+@import "bootstrap/bootstrap.less";
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+html { height:100%; }
+body { height:100%; }
+
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.icon-bar{
+   background-color:white;
+   height:4px;
+   width:44px;
+}
+
+.navbar-toggle{
+   padding-top:45px;
+   padding-right: 30px;
+            }
+.banner {
+   height:100%;
+   .headerHome{
+      background-color:@brand-main;
+      min-height:500px;
+      .container{
+         .navbar-brand{
+            padding-top:25px;
+            .headerLogo{
+               height:75px;
+               width:75px;
+            }
+         }
+         nav {
+            padding-top:35px;
+            .navbar-nav{
+               li {
+                  a {
+                     font-size:1.4em;
+                     color:white;
+                  }
+               }
+            }
+         }
+      }
+      .row {
+         .container{
+            .col-sm-12{
+               margin-bottom:25px;
+               .welcomeText{
+                  color:white;
+                  text-align:center;
+                  margin-top: 6em;
+                  h1 {
+                     @media screen and (max-width: 992px) { font-size:3.5em; }
+                     @media screen and (max-width: 715px) { font-size:2.5em; }
+                     font-size:4em;
+                  }
+                  h2{
+                     @media screen and (max-width: 992px) { font-size:3.5em; }
+                     @media screen and (max-width: 715px) { font-size:2.5em; }
+                     font-size:4em;
+                     font-weight:300;
+                  }
+                  h3 {
+                     a {
+                        color:@brand-alternate;
+                     }
+                     @media screen and (max-width: 992px) { font-size:1.3em; }
+                  }
+               }
+            }
+            .form-inline{
+               text-align:center;
+               margin-top:25px;
+               inline:block;
+               .ctaButton {
+                  background-color:@brand-alternate;
+                  color:white;
+               }
+               .form-control{
+                  border: 1px none #ccc;
+                  width:300px;
+                  @media screen and (max-width: 768px) {  width:150px; }
+                  display:inline;
+               }
+               .form-group{
+                     display:inline;
+                  }
+            }
+         }
+      }
+   }
+      .secondaryStripe{
+         background-color:@brand-secondary;
+         height:45px;
+      }
+      .alternateStripe{
+         background-color:@brand-alternate;
+         height:45px;
+      }
+ }
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content { }
+
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.content-info {
+   .footerCallToAction {
+        background-color:@brand-main;
+        min-height:200px; 
+        color:white;
+        text-align:center;
+        h2{
+         padding-top:35px;
+         @media screen and (max-width: 450px) {  padding-top:15px; }
+         @media screen and (max-width: 992px) {  font-size:1.8em; }
+         @media screen and (max-width: 682px) {  font-size:1.6em; }
+        }
+        .form-inline{
+               text-align:center;
+               margin-top:25px;
+               margin-bottom:20px;
+               @media screen and (max-width: 450px) {  margin-bottom:10px; }
+               inline:block;
+               .ctaButton {
+                  background-color:@brand-alternate;
+                  color:white;
+               }
+               .form-control{
+                  border: 1px none #ccc;
+                  width:300px;
+                  @media screen and (max-width: 768px) {  width:150px; }
+                  display:inline;
+               }
+               .form-group{
+                     display:inline;
+               }
+         }
+   }
+   .footerMeetsCTA{
+      background-color:@brand-secondary;
+      height:45px;
+   }
+   .mainFooter {
+      background-color:@brand-alternate;
+      min-height:225px;
+   }
+ }
+
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (min-width: @screen-xs-min) { }
+@media (min-width: @screen-md-min) { }
+
+@media (min-width: @screen-lg-min) { }
