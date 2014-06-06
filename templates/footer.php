@@ -15,8 +15,15 @@
   </div>
   <div class="mainFooter">
   	<div class="container">
-	    <?php dynamic_sidebar('sidebar-footer'); ?>
-	    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+  		<img class="footerLogo" src="wp-content/themes/heyellieday/assets/img/logo.png">
+
+	    <nav class="collapse navbar-collapse" role="navigation">
+        <?php
+          if (has_nav_menu('primary_navigation')) :
+            wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
+          endif;
+        ?>
+      </nav>
 	</div>
   </div>
 </footer>

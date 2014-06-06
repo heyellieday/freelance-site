@@ -23,8 +23,8 @@
       <div class="container">
         <div class="col-sm-12">
           <div class="welcomeText">
-            <h1>simple, crisp, & clean design</h1>
-            <h2>elegant & modern development</h2>
+            <h1>simple, crisp, and clean design</h1>
+            <h2>elegant and modern development</h2>
             <h3>Personally crafted websites for those who want the best. <a href="#">Learn More</a></h3>
           </div>
           <form class="form-inline" role="form">

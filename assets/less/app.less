@@ -10,6 +10,11 @@
 html { height:100%; }
 body { height:100%; }
 
+.row {
+   margin-left: 15px;
+   margin-right: 15px;
+}
+
 
 
 /* ==========================================================================
@@ -27,10 +32,11 @@ body { height:100%; }
    padding-right: 30px;
             }
 .banner {
-   height:100%;
+   border: 1px none transparent;
    .headerHome{
       background-color:@brand-main;
       min-height:500px;
+      @media screen and (max-width: 500px) { min-height:450px; }
       .container{
          .navbar-brand{
             padding-top:25px;
@@ -59,14 +65,17 @@ body { height:100%; }
                   color:white;
                   text-align:center;
                   margin-top: 6em;
+                  @media screen and (max-width: 500px) { margin-top: 2.5em; }
                   h1 {
                      @media screen and (max-width: 992px) { font-size:3.5em; }
                      @media screen and (max-width: 715px) { font-size:2.5em; }
+                     @media screen and (max-width: 415px) { font-size:2.4em; }
                      font-size:4em;
                   }
                   h2{
                      @media screen and (max-width: 992px) { font-size:3.5em; }
                      @media screen and (max-width: 715px) { font-size:2.5em; }
+                     @media screen and (max-width: 415px) { font-size:2.2em; }
                      font-size:4em;
                      font-weight:300;
                   }
@@ -89,7 +98,7 @@ body { height:100%; }
                .form-control{
                   border: 1px none #ccc;
                   width:300px;
-                  @media screen and (max-width: 768px) {  width:150px; }
+                  @media screen and (max-width: 768px) {  width:120px; }
                   display:inline;
                }
                .form-group{
@@ -116,6 +125,156 @@ body { height:100%; }
    ========================================================================== */
 
 .content { }
+
+.highlightedFeatures {
+   min-height:350px;
+   @media screen and (max-width: 1100px) { min-height:300px; }
+   .headerText{
+      h2 {
+         text-align:center;
+      }
+   }
+   .row {
+      .col-sm-4{
+         img{
+            width:50%;
+            display: table;
+            margin: 0 auto;
+         }
+         h3 {
+         text-align:center;
+         }
+      }
+   }
+   .ctaText{
+      h2{
+         text-align:center;
+         a{
+            color:@brand-alternate;
+         }
+      }
+      padding-bottom:40px;
+      @media screen and (max-width: 1100px) {  padding-bottom:20px; }
+   }
+}
+
+.pastWork {
+   margin-left: -15px;
+   margin-right: -15px;
+   background-color:@brand-secondary;
+   min-height:400px;
+   @media screen and (max-width: 1500px) {  
+      min-height:350px;
+   }
+   padding-bottom:25px;
+   .row {
+      .web ,.mobile{
+         margin-top:25px;
+         img{
+            @media screen and (min-width: 1500px) {  
+               max-height:350px;
+               display: table;
+               margin: 0 auto;
+            }
+            @media screen and (max-width: 1500px) {  
+               height:300px;
+               display: table;
+               margin: 0 auto;
+            }  
+         }
+      }
+      .web {
+         @media screen and (max-width: 1280px) and (min-width: 992px) {  
+            margin-left: -50px;         
+         }
+         img {
+            @media screen and (max-width: 991px) { 
+                  width:50%;
+                  height:auto;
+                  display: table;
+                  margin: 0 auto; 
+            }
+            @media screen and (max-width: 767px) { 
+                  width:80%;
+                  height:auto;
+                  display: table;
+                  margin: 0 auto; 
+            }
+         }
+      }
+      .pastWorkText{
+         margin-top: 150px;
+         @media screen and (max-width: 1500px) and (min-width: 1280px) {  
+            margin-top: 90px;
+         }
+         @media screen and (max-width: 1280px) {  
+            margin-top: 75px;
+            display: table;
+            margin: 75px auto 0 45px;
+            
+         }
+
+         @media screen and (max-width: 992px) {  
+            width:100%;
+            margin: 0 auto 0 0;
+         }
+         h2 {
+         text-align:center;
+         }
+         a{
+            color:@brand-alternate;
+            text-align:center;
+            font-size:1.8em;
+            display: table;
+            margin: 0 auto;
+         }
+      }
+   }
+}
+
+.whatClientsSay {
+   min-height:375px;
+   #carousel{
+      .carousel-indicators .active {
+         background-color:@brand-alternate;
+      }
+      .carousel-indicators li {
+         border-color:@brand-alternate;
+      }
+      margin-left: -15px;
+      margin-right: -15px;
+      min-height:375px;
+      @media screen and (max-width: 768px) { 
+         min-height:400px; 
+      }
+      .carousel-control{
+         background-image:none;
+         .glyphicon-chevron-left:before{
+            color:@brand-alternate;
+         }
+         .glyphicon-chevron-right:before{
+            color:@brand-alternate;
+         }
+      }
+      .carousel-inner{
+         .item{
+            margin: 25px auto;
+            img{
+               height:175px;
+               width:auto;
+               margin: 0 auto;
+            }
+            max-width: 70%;
+            h3 {
+               text-align:center;
+            }
+            .quote {
+               font-weight:300;
+            }
+         }
+      }
+   }
+}
 
 
 
@@ -193,6 +352,32 @@ body { height:100%; }
    .mainFooter {
       background-color:@brand-alternate;
       min-height:225px;
+      .footerLogo {
+
+            margin: 0 auto;
+            margin-top:25px;
+            @media screen and (max-width: 768px) { margin-top:50px; }
+            display: table;
+            table-layout: fixed;
+            float:none;
+            height:125px;
+            width:125px;
+         }
+      nav {
+         margin: 0 auto;
+         .navbar-nav{
+            margin: 0 auto;
+            display: table;
+            table-layout: fixed;
+            float:none;
+            li {
+               a {
+                  font-size:1.4em;
+                  color:white;
+               }
+            }
+         }
+      }
    }
  }
 
